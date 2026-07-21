@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOMO No. 1 - Every Bite is a Blockbuster!</title>
+  <meta name="description" content="MOMO No. 1 serves the most delicious, blockbuster Bollywood-themed momos in Joshimath. Try Steamed, Fried, Kurkure, and Tandoori Momos today!">
+  <meta name="keywords" content="Momo No 1, Momos Joshimath, Bollywood Momos, Best Momos, Fast Food Joshimath, Chinese Food">
+  <meta name="author" content="MOMO No. 1">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for Socials -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+
+  <!-- Sticky Offer Banner -->
+  <div class="sticky-banner" id="sticky-banner">
+    <div class="banner-content">
+      <span>🎉 FREE Cold Drink with Every Order! 🥤 Order Now and Claim Your Blockbuster Deal! 🍿</span>
+    </div>
+    <button class="close-banner-btn" id="close-banner" aria-label="Close offer banner">&times;</button>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="main-header" id="main-header">
+    <div class="header-container">
+      <a href="#home" class="logo-area">
+        <div class="logo-img-wrapper">
+          <img src="assets/mascot_logo.png" alt="MOMO No. 1 Mascot Logo" class="mascot-logo" onerror="this.src='https://placehold.co/100x100/e63946/ffffff?text=MOMO+1'">
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">MOMO <span class="highlight">No. 1</span></span>
+          <span class="logo-tagline">Every Bite is a Blockbuster!</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#why-choose-us" class="nav-link">Why Us</a>
+        <a href="#celebrity-fun" class="nav-link">Star Reviews</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Light/Dark Mode Toggle -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light theme">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <!-- Cart Preview Trigger -->
+        <button class="cart-trigger-btn" id="cart-trigger" aria-label="View current plate">
+          <i class="fas fa-shopping-basket"></i>
+          <span class="cart-badge" id="cart-count">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg-floating-momos" id="hero-floating-momos"></div>
+    <div class="hero-container">
+      <div class="hero-text-content">
+        <div class="hero-badge">🌶️ Joshimath's Legendary Spices</div>
+        <h1 class="hero-title">
+          "Pushpa jhukega nahi... lekin <br>
+          <span class="gradient-text">MOMO No. 1</span> ke Momos ke saamne sab jhuk jaate hain!"
+        </h1>
+        <p class="hero-subtitle">Every Bite is a Blockbuster! Sourced from the heights of Joshimath, steamed to perfection, and served with a chutney so spicy, it'll make you dance like a Bollywood hero.</p>
+        
+        <div class="hero-ctas">
+          <a href="#menu" class="btn btn-primary btn-glow animate-pulse">
+            <i class="fas fa-fire-flame-curved"></i> Order Now
+          </a>
+          <a href="#menu" class="btn btn-secondary">
+            <i class="fas fa-utensils"></i> View Menu
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-graphic">
+        <div class="glow-ring"></div>
+        <img src="assets/mascot_logo.png" alt="Momo Mascot Logo Banner" class="hero-mascot-img floating-animation" onerror="this.src='https://placehold.co/400x400/e63946/ffffff?text=MOMO+Mascot'">
+        <div class="hero-floating-badge text-badge-1">🔥 100% Fresh</div>
+        <div class="hero-floating-badge text-badge-2">🧄 Extra Chutney</div>
+        <div class="hero-floating-badge text-badge-3">🥬 Organic Veggies</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Promotion Banner -->
+  <section class="special-promo-banner">
+    <div class="promo-container">
+      <div class="promo-icon">🥤</div>
+      <div class="promo-text-wrap">
+        <h3>🎉 BLOCKBUSTER COMBO OFFER! 🎉</h3>
+        <p>Buy Any Plate of Momos & Get One FREE Ice-Cold Drink! 🥤 Grab yours before stock runs out!</p>
+      </div>
+      <div class="promo-cta">
+        <a href="#menu" class="btn btn-yellow">Claim Offer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu-section" id="menu">
+    <div class="section-decor top-decor"></div>
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading">Filmy Flavors</span>
+        <h2 class="section-title">The Blockbuster Menu</h2>
+        <p class="section-desc">Choose your character! Customize your momo style, set your spice levels, and prepare for a taste explosion.</p>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Steamed Momos -->
+        <div class="menu-card glass-card scroll-reveal" data-momo-id="steamed">
+          <div class="card-badge bestseller-badge">Classics</div>
+          <div class="card-img-wrapper">
+            <img src="assets/steamed_momo.png" alt="Steamed Momos" class="momo-dish-img" onerror="this.src='https://placehold.co/200x200/e63946/ffffff?text=Steamed+Momo'">
+          </div>
+          <div class="card-body">
+            <h3 class="momo-name">Steamed Momos</h3>
+            <p class="momo-description">The ultimate classic. Soft, juicy, and steamed to perfection. Bollywood's evergreen favorite!</p>
+            
+            <div class="momo-options">
+              <!-- Type selector -->
+              <div class="option-group">
+                <span class="option-label">Stuffing:</span>
+                <div class="pill-selectors" data-option="stuffing">
+                  <button class="pill active" data-value="veg" data-price-mod="0">Veg</button>
+                  <button class="pill" data-value="paneer" data-price-mod="1">Paneer (+$1)</button>
+                  <button class="pill" data-value="chicken" data-price-mod="1.5">Chicken (+$1.5)</button>
+                </div>
+              </div>
+              
+              <!-- Spicy Meter -->
+              <div class="option-group">
+                <div class="spicy-meter-header">
+                  <span class="option-label">Spicy Meter:</span>
+                  <span class="spicy-level-text lvl-medium">Medium 🔥🔥</span>
+                </div>
+                <input type="range" min="1" max="4" value="2" class="spicy-slider">
+              </div>
+
+              <!-- Extra Cheese Checkbox -->
+              <div class="checkbox-group">
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="extra-cheese-cb" data-price-mod="0.5">
+                  <span class="checkmark"></span>
+                  Load Extra Cheese? (+$0.50) 🧀
+                </label>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="price-container">
+                <span class="currency">$</span><span class="base-price" data-base="5.00">5.00</span>
+              </div>
+              <button class="btn btn-add-cart">
+                <i class="fas fa-plus"></i> Add to Plate
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fried Momos -->
+        <div class="menu-card glass-card scroll-reveal" data-momo-id="fried">
+          <div class="card-badge">Crispy</div>
+          <div class="card-img-wrapper">
+            <img src="assets/fried_momo.png" alt="Fried Momos" class="momo-dish-img" onerror="this.src='https://placehold.co/200x200/e63946/ffffff?text=Fried+Momo'">
+          </div>
+          <div class="card-body">
+            <h3 class="momo-name">Fried Momos</h3>
+            <p class="momo-description">Golden, crunchy, and packed with hot fillings. Crackle in every bite, just like a movie intermission snack!</p>
+            
+            <div class="momo-options">
+              <!-- Type selector -->
+              <div class="option-group">
+                <span class="option-label">Stuffing:</span>
+                <div class="pill-selectors" data-option="stuffing">
+                  <button class="pill active" data-value="veg" data-price-mod="0">Veg</button>
+                  <button class="pill" data-value="paneer" data-price-mod="1">Paneer (+$1)</button>
+                  <button class="pill" data-value="chicken" data-price-mod="1.5">Chicken (+$1.5)</button>
+                </div>
+              </div>
+              
+              <!-- Spicy Meter -->
+              <div class="option-group">
+                <div class="spicy-meter-header">
+                  <span class="option-label">Spicy Meter:</span>
+                  <span class="spicy-level-text lvl-medium">Medium 🔥🔥</span>
+                </div>
+                <input type="range" min="1" max="4" value="2" class="spicy-slider">
+              </div>
+
+              <!-- Extra Cheese Checkbox -->
+              <div class="checkbox-group">
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="extra-cheese-cb" data-price-mod="0.5">
+                  <span class="checkmark"></span>
+                  Load Extra Cheese? (+$0.50) 🧀
+                </label>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="price-container">
+                <span class="currency">$</span><span class="base-price" data-base="6.00">6.00</span>
+              </div>
+              <button class="btn btn-add-cart">
+                <i class="fas fa-plus"></i> Add to Plate
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kurkure Momos -->
+        <div class="menu-card glass-card scroll-reveal" data-momo-id="kurkure">
+          <div class="card-badge bestseller-badge">Bestseller</div>
+          <div class="card-img-wrapper">
+            <img src="assets/kurkure_momo.png" alt="Kurkure Momos" class="momo-dish-img" onerror="this.src='https://placehold.co/200x200/e63946/ffffff?text=Kurkure+Momo'">
+          </div>
+          <div class="card-body">
+            <h3 class="momo-name">Kurkure Momos</h3>
+            <p class="momo-description">Super crunchy outer shell seasoned with a secret spicy mix. Heavy actions, zero compromises!</p>
+            
+            <div class="momo-options">
+              <!-- Type selector -->
+              <div class="option-group">
+                <span class="option-label">Stuffing:</span>
+                <div class="pill-selectors" data-option="stuffing">
+                  <button class="pill active" data-value="veg" data-price-mod="0">Veg</button>
+                  <button class="pill" data-value="paneer" data-price-mod="1">Paneer (+$1)</button>
+                  <button class="pill" data-value="chicken" data-price-mod="1.5">Chicken (+$1.5)</button>
+                </div>
+              </div>
+              
+              <!-- Spicy Meter -->
+              <div class="option-group">
+                <div class="spicy-meter-header">
+                  <span class="option-label">Spicy Meter:</span>
+                  <span class="spicy-level-text lvl-spicy">Spicy 🔥🔥🔥</span>
+                </div>
+                <input type="range" min="1" max="4" value="3" class="spicy-slider">
+              </div>
+
+              <!-- Extra Cheese Checkbox -->
+              <div class="checkbox-group">
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="extra-cheese-cb" data-price-mod="0.5">
+                  <span class="checkmark"></span>
+                  Load Extra Cheese? (+$0.50) 🧀
+                </label>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="price-container">
+                <span class="currency">$</span><span class="base-price" data-base="7.00">7.00</span>
+              </div>
+              <button class="btn btn-add-cart">
+                <i class="fas fa-plus"></i> Add to Plate
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tandoori Momos -->
+        <div class="menu-card glass-card scroll-reveal" data-momo-id="tandoori">
+          <div class="card-badge bestseller-badge">Bestseller</div>
+          <div class="card-img-wrapper">
+            <img src="assets/tandoori_momo.png" alt="Tandoori Momos" class="momo-dish-img" onerror="this.src='https://placehold.co/200x200/e63946/ffffff?text=Tandoori+Momo'">
+          </div>
+          <div class="card-body">
+            <h3 class="momo-name">Tandoori Momos</h3>
+            <p class="momo-description">Marinated in curd and spices, charred in clay oven. Tastes smoky and high drama, just like a climax scene!</p>
+            
+            <div class="momo-options">
+              <!-- Type selector -->
+              <div class="option-group">
+                <span class="option-label">Stuffing:</span>
+                <div class="pill-selectors" data-option="stuffing">
+                  <button class="pill active" data-value="veg" data-price-mod="0">Veg</button>
+                  <button class="pill" data-value="paneer" data-price-mod="1">Paneer (+$1)</button>
+                  <button class="pill" data-value="chicken" data-price-mod="1.5">Chicken (+$1.5)</button>
+                </div>
+              </div>
+              
+              <!-- Spicy Meter -->
+              <div class="option-group">
+                <div class="spicy-meter-header">
+                  <span class="option-label">Spicy Meter:</span>
+                  <span class="spicy-level-text lvl-spicy">Spicy 🔥🔥🔥</span>
+                </div>
+                <input type="range" min="1" max="4" value="3" class="spicy-slider">
+              </div>
+
+              <!-- Extra Cheese Checkbox -->
+              <div class="checkbox-group">
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="extra-cheese-cb" data-price-mod="0.5">
+                  <span class="checkmark"></span>
+                  Load Extra Cheese? (+$0.50) 🧀
+                </label>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="price-container">
+                <span class="currency">$</span><span class="base-price" data-base="8.00">8.00</span>
+              </div>
+              <button class="btn btn-add-cart">
+                <i class="fas fa-plus"></i> Add to Plate
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Afghani Momos -->
+        <div class="menu-card glass-card scroll-reveal" data-momo-id="afghani">
+          <div class="card-badge">Creamy</div>
+          <div class="card-img-wrapper">
+            <img src="assets/afghani_momo.png" alt="Afghani Momos" class="momo-dish-img" onerror="this.src='https://placehold.co/200x200/e63946/ffffff?text=Afghani+Momo'">
+          </div>
+          <div class="card-body">
+            <h3 class="momo-name">Afghani Momos</h3>
+            <p class="momo-description">Drenched in rich cream, butter, and cashew paste. Smooth and romantic, the Yash Chopra of momos!</p>
+            
+            <div class="momo-options">
+              <!-- Type selector -->
+              <div class="option-group">
+                <span class="option-label">Stuffing:</span>
+                <div class="pill-selectors" data-option="stuffing">
+                  <button class="pill active" data-value="veg" data-price-mod="0">Veg</button>
+                  <button class="pill" data-value="paneer" data-price-mod="1">Paneer (+$1)</button>
+                  <button class="pill" data-value="chicken" data-price-mod="1.5">Chicken (+$1.5)</button>
+                </div>
+              </div>
+              
+              <!-- Spicy Meter -->
+              <div class="option-group">
+                <div class="spicy-meter-header">
+                  <span class="option-label">Spicy Meter:</span>
+                  <span class="spicy-level-text lvl-mild">Mild 🔥</span>
+                </div>
+                <input type="range" min="1" max="4" value="1" class="spicy-slider">
+              </div>
+
+              <!-- Extra Cheese Checkbox -->
+              <div class="checkbox-group">
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="extra-cheese-cb" data-price-mod="0.5">
+                  <span class="checkmark"></span>
+                  Load Extra Cheese? (+$0.50) 🧀
+                </label>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="price-container">
+                <span class="currency">$</span><span class="base-price" data-base="9.00">9.00</span>
+              </div>
+              <button class="btn btn-add-cart">
+                <i class="fas fa-plus"></i> Add to Plate
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-us-section" id="why-choose-us">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading">Why We Rule</span>
+        <h2 class="section-title">The MOMO Manifesto</h2>
+        <p class="section-desc">Why do foodies cross mountain ranges for MOMO No. 1? Here is our spicy secret script.</p>
+      </div>
+
+      <div class="why-us-grid">
+        <!-- Card 1 -->
+        <div class="why-card glass-card scroll-reveal">
+          <div class="why-icon">🥟</div>
+          <h3>Handmade Happiness</h3>
+          <p>Every momo is hand-rolled and carefully pleated by our master chefs with Bollywood songs playing in the background for extra soul!</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="why-card glass-card scroll-reveal">
+          <div class="why-icon">🥬</div>
+          <h3>100% Fresh Ingredients</h3>
+          <p>Freshly minced fillings and organic vegetables sourced right from the valleys of Joshimath. Absolutely zero preservatives!</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="why-card glass-card scroll-reveal">
+          <div class="why-icon">🌶️</div>
+          <h3>Secret Chutney Recipe</h3>
+          <p>Made with red hot ghost peppers (Bhoot Jolokia) and tomatoes, our chutney has a secret ingredient that makes it an instant blockbuster hit.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="why-card glass-card scroll-reveal">
+          <div class="why-icon">🎬</div>
+          <h3>Bollywood Approved</h3>
+          <p>Spicier than a masala movie, dramatic steam, and reviews that are worthy of an Oscar. Approved by the drama gods!</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="why-card glass-card scroll-reveal">
+          <div class="why-icon">😊</div>
+          <h3>Happiness Guaranteed</h3>
+          <p>One bite and your troubles melt away. If you don't smile after eating, we will give you extra chutney for free (Warning: highly spicy!).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews Section -->
+  <section class="reviews-section" id="testimonials">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading">Audience Reactions</span>
+        <h2 class="section-title">Fan Mail & Reviews</h2>
+        <p class="section-desc">See what our awesome customers say after being absolutely mesmerized by our momos.</p>
+      </div>
+
+      <div class="reviews-slider">
+        <!-- Review 1 -->
+        <div class="review-card glass-card scroll-reveal">
+          <div class="stars">⭐⭐⭐⭐&frac12;</div>
+          <p class="review-text">"I came for one plate... left after eating six! My family had to send a search party to Joshimath!"</p>
+          <div class="reviewer-info">
+            <span class="reviewer-name">- Rahul</span>
+            <span class="reviewer-badge">Momo Devotee</span>
+          </div>
+        </div>
+        <!-- Review 2 -->
+        <div class="review-card glass-card scroll-reveal">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"My diet plan officially surrendered at the door. I told my trainer it was cheat day, but it's now cheat month!"</p>
+          <div class="reviewer-info">
+            <span class="reviewer-name">- Sneha</span>
+            <span class="reviewer-badge">Serial Muncher</span>
+          </div>
+        </div>
+        <!-- Review 3 -->
+        <div class="review-card glass-card scroll-reveal">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"These momos deserve their own IPL team! The red chutney is basically a hat-trick delivery of pure flavor."</p>
+          <div class="reviewer-info">
+            <span class="reviewer-name">- Vivek</span>
+            <span class="reviewer-badge">Chutney Critic</span>
+          </div>
+        </div>
+        <!-- Review 4 -->
+        <div class="review-card glass-card scroll-reveal">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"Even my grandmother asked for the recipe! And she doesn't even like garlic. That is the magic of MOMO No. 1!"</p>
+          <div class="reviewer-info">
+            <span class="reviewer-name">- Priya</span>
+            <span class="reviewer-badge">Home Chef Expert</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Celebrity Fun Section -->
+  <section class="celebrity-fun-section" id="celebrity-fun">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading">Filmy Gossip</span>
+        <h2 class="section-title">What Celebrities Might Say About MOMO No. 1</h2>
+        <p class="section-desc">If Bollywood and cricket giants stopped by our shop, here is what they might declare. (Just for fun!)</p>
+      </div>
+
+      <div class="celebrity-grid">
+        <!-- Amitabh -->
+        <div class="celebrity-card glass-card scroll-reveal">
+          <div class="celebrity-avatar">🎙️</div>
+          <div class="celebrity-content">
+            <h4>The Shahenshah Speaks</h4>
+            <p class="quote">"Rishte mein toh hum tumhare baap lagte hain... lekin swaad mein hum tumhare momo lagte hain! Hain? Deviprasad, momo le aao! Locking this taste immediately!"</p>
+            <span class="celebrity-name">Inspired by Big B</span>
+          </div>
+        </div>
+
+        <!-- MS Dhoni -->
+        <div class="celebrity-card glass-card scroll-reveal">
+          <div class="celebrity-avatar">🏏</div>
+          <div class="celebrity-content">
+            <h4>Captain Cool's Review</h4>
+            <p class="quote">"Whether it is 2 runs off 1 ball or a plate of hot Kurkure Momos, keeping it cool is key. But these momos definitely finish it off in style. Highly recommended."</p>
+            <span class="celebrity-name">Inspired by MSD</span>
+          </div>
+        </div>
+
+        <!-- Urvashi Rautela -->
+        <div class="celebrity-card glass-card scroll-reveal">
+          <div class="celebrity-avatar">👑</div>
+          <div class="celebrity-content">
+            <h4>The Global Icon Quote</h4>
+            <p class="quote">"As the first youngest most beautiful IITian international beauty queen to eat momos, I must say these momos are as gorgeous and flawless as my pageants. Truly elite!"</p>
+            <span class="celebrity-name">Inspired by Urvashi</span>
+          </div>
+        </div>
+
+        <!-- Rakhi Sawant -->
+        <div class="celebrity-card glass-card scroll-reveal">
+          <div class="celebrity-avatar">💅</div>
+          <div class="celebrity-content">
+            <h4>The Drama Queen Verdict</h4>
+            <p class="quote">"Arey yaar, ye momo toh mere dil ke jaise hot aur spicy hain! Ek baar khao, toh poora sansaar ghum jaoge! No controversy, only 100% tasty, Oh my God!"</p>
+            <span class="celebrity-name">Inspired by Rakhi</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="disclaimer-block">
+        <p>⚠️ <strong>Disclaimer:</strong> These are fictional parody quotes created for entertainment only and are not real endorsements by the public figures mentioned.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading">Visual Treat</span>
+        <h2 class="section-title">The Momo Frame</h2>
+        <p class="section-desc">Feast your eyes on these cartoon illustrations of our signature menu items, chutney, and refreshing drinks.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Item 1 -->
+        <div class="gallery-item scroll-reveal">
+          <img src="assets/steamed_momo.png" alt="Cartoon Steamed Momos" onerror="this.src='https://placehold.co/300x300/e63946/ffffff?text=Steamed+Momos'">
+          <div class="gallery-overlay">
+            <h4>Steamed Momos</h4>
+            <p>Hot, soft, and classic</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="gallery-item scroll-reveal">
+          <img src="assets/fried_momo.png" alt="Cartoon Fried Momos" onerror="this.src='https://placehold.co/300x300/e63946/ffffff?text=Fried+Momos'">
+          <div class="gallery-overlay">
+            <h4>Fried Momos</h4>
+            <p>Extra crisp, golden glory</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="gallery-item scroll-reveal">
+          <img src="assets/tandoori_momo.png" alt="Cartoon Tandoori Momos" onerror="this.src='https://placehold.co/300x300/e63946/ffffff?text=Tandoori+Momos'">
+          <div class="gallery-overlay">
+            <h4>Tandoori Momos</h4>
+            <p>Smoky and rich clay-oven baked</p>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="gallery-item scroll-reveal">
+          <img src="assets/afghani_momo.png" alt="Cartoon Afghani Momos" onerror="this.src='https://placehold.co/300x300/e63946/ffffff?text=Afghani+Momos'">
+          <div class="gallery-overlay">
+            <h4>Afghani Momos</h4>
+            <p>Mild, creamy, cashew-based dressing</p>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="gallery-item scroll-reveal">
+          <img src="assets/kurkure_momo.png" alt="Cartoon Kurkure Momos" onerror="this.src='https://placehold.co/300x300/e63946/ffffff?text=Kurkure+Momos'">
+          <div class="gallery-overlay">
+            <h4>Kurkure Momos</h4>
+            <p>Super-crunchy seasoned delight</p>
+          </div>
+        </div>
+        <!-- Item 6 -->
+        <div class="gallery-item scroll-reveal">
+          <img src="assets/spicy_chutney.png" alt="Cartoon Spicy Chutney" onerror="this.src='https://placehold.co/300x300/e63946/ffffff?text=Spicy+Chutney'">
+          <div class="gallery-overlay">
+            <h4>Spicy Red Chutney</h4>
+            <p>The tear-inducing, spicy-sour blockbuster sauce</p>
+          </div>
+        </div>
+        <!-- Item 7 -->
+        <div class="gallery-item scroll-reveal">
+          <img src="assets/free_cold_drink.png" alt="Cartoon Free Cold Drink" onerror="this.src='https://placehold.co/300x300/e63946/ffffff?text=Free+Cold+Drink'">
+          <div class="gallery-overlay">
+            <h4>Free Cold Drink</h4>
+            <p>Ice-cold beverage to extinguish the fire</p>
+          </div>
+        </div>
+        <!-- Item 8 -->
+        <div class="gallery-item scroll-reveal">
+          <img src="assets/mascot_logo.png" alt="MOMO No. 1 Mascot Logo" onerror="this.src='https://placehold.co/300x300/e63946/ffffff?text=Mascot+Logo'">
+          <div class="gallery-overlay">
+            <h4>Our Smiling Mascot</h4>
+            <p>Chutney-loving, shade-wearing star of the show</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading">Locate the Star</span>
+        <h2 class="section-title">Plot a Route</h2>
+        <p class="section-desc">Drop by or send us a message. We are waiting with hot momos and spicy stories!</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info & Map Card -->
+        <div class="contact-info-card glass-card scroll-reveal">
+          <h3>The Star Location</h3>
+          
+          <div class="info-items">
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-map-location-dot"></i></div>
+              <div class="info-content">
+                <strong>Address:</strong>
+                <p>Joshimath ke Haathi Pahad ke Neeche, Laal-Peeli Dukan, Uttarakhand, India</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-phone-volume"></i></div>
+              <div class="info-content">
+                <strong>Order Line:</strong>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-headset"></i></div>
+              <div class="info-content">
+                <strong>Customer Care:</strong>
+                <p>1800-555-MOMO (1800-555-6666)</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-envelope-open-text"></i></div>
+              <div class="info-content">
+                <strong>Email:</strong>
+                <p>hello@momono1.com</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom SVG Google Maps Placeholder -->
+          <div class="map-placeholder">
+            <svg viewBox="0 0 400 200" class="svg-map" aria-label="Map to MOMO No. 1">
+              <rect width="100%" height="100%" fill="var(--map-bg)" rx="10"/>
+              <!-- Roads -->
+              <path d="M 0 50 Q 150 120 400 30" fill="transparent" stroke="var(--map-road)" stroke-width="12" />
+              <path d="M 120 0 Q 200 150 300 200" fill="transparent" stroke="var(--map-road)" stroke-width="8" />
+              <!-- Mountains -->
+              <polygon points="50,60 100,120 10,120" fill="var(--map-mountain)" opacity="0.6"/>
+              <polygon points="120,40 200,140 60,140" fill="var(--map-mountain)" opacity="0.7"/>
+              <text x="140" y="80" fill="var(--card-text)" font-family="'Outfit', sans-serif" font-size="12" opacity="0.5">Haathi Pahad 🐘</text>
+              <!-- Mascot/Shop Marker -->
+              <circle cx="200" cy="100" r="14" fill="var(--primary-color)" />
+              <circle cx="200" cy="100" r="8" fill="var(--yellow-color)" />
+              <text x="220" y="105" fill="var(--primary-color)" font-weight="bold" font-family="'Outfit', sans-serif" font-size="13">MOMO No. 1 🏠</text>
+              <!-- Details -->
+              <text x="10" y="190" fill="var(--card-text)" font-size="10" font-family="sans-serif">Map simulation of Joshimath hills</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-form-card glass-card scroll-reveal">
+          <h3>Send a Fan Message</h3>
+          <form id="contact-form" class="animated-form">
+            <div class="form-group">
+              <label for="form-name">Your Name</label>
+              <input type="text" id="form-name" required placeholder="e.g. Shah Rukh">
+            </div>
+            <div class="form-group">
+              <label for="form-email">Your Email</label>
+              <input type="email" id="form-email" required placeholder="e.g. srk@filmy.com">
+            </div>
+            <div class="form-group">
+              <label for="form-msg">Filmy Message</label>
+              <textarea id="form-msg" rows="5" required placeholder="Describe your momo cravings..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-glow">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div id="form-feedback" class="form-feedback-message"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart / Checkout Modal -->
+  <div class="modal-overlay" id="cart-modal">
+    <div class="modal-content glass-card">
+      <div class="modal-header">
+        <h2>Your Blockbuster Plate 🥟</h2>
+        <button class="close-modal-btn" id="close-cart-modal" aria-label="Close plate summary">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="cart-items-container">
+          <!-- Dynamically populated -->
+          <p class="empty-cart-message">Your plate is currently empty! Head to the menu to add some flavor.</p>
+        </div>
+        
+        <!-- Promo inclusion details -->
+        <div class="cart-promo-callout hidden" id="cart-promo-msg">
+          <span class="gift-icon">🥤</span>
+          <div>
+            <strong>Promo Applied!</strong>
+            <p>You qualified for <span class="free-drink-count">1</span> FREE Cold Drink!</p>
+          </div>
+        </div>
+
+        <div class="cart-totals">
+          <div class="total-row">
+            <span>Subtotal:</span>
+            <span>$<span id="cart-subtotal">0.00</span></span>
+          </div>
+          <div class="total-row delivery-row">
+            <span>Delivery:</span>
+            <span class="free-text">FREE</span>
+          </div>
+          <div class="total-row grand-total">
+            <span>Total Amount:</span>
+            <span>$<span id="cart-total">0.00</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="clear-cart-btn">Clear Plate</button>
+        <button class="btn btn-primary btn-glow" id="checkout-btn">Place Order</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Float WhatsApp Chat Button -->
+  <a href="https://wa.me/15551234567?text=I%20want%20to%20order%20MOMO%20No.%201%20with%20extra%20chutney!" target="_blank" class="whatsapp-floating-btn" aria-label="Chat with MOMO No. 1 on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="tooltip-text">Order on WhatsApp!</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>MOMO No. 1</h3>
+        <p>Serving Blockbuster street food at the foothills of Haathi Pahad, Joshimath.</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://facebook.com" target="_blank" aria-label="Visit us on Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Visit us on Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank" aria-label="Visit us on YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with ❤️ and extra chutney.</p>
+        <p class="copyright">&copy; 2026 MOMO No. 1. All Rights Reserved. (Fictional Parody Project)</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
